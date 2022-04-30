@@ -6,6 +6,10 @@ header {
     background-color: black;
     font-family: 'Julius Sans One';
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 figcaption {
     color: grey;
     font-size: x-small;
