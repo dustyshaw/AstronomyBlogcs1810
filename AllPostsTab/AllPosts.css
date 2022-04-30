@@ -1,0 +1,138 @@
+h1 {
+    text-align: center;
+    font-family: 'Julius Sans One';
+}
+header {
+    background-color: black;
+    font-family: 'Julius Sans One';
+}
+figcaption {
+    color: grey;
+    font-size: x-small;
+}
+#logo {
+    color: rgb(232, 128, 0);
+    background-color: inherit;
+    font-family: 'Julius Sans One', sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+#tagsWrapper {
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-image: linear-gradient(45deg, #6955c395, #88203daa);
+    /* margin-top: px; */
+    /* margin-bottom: -15px; */
+}
+
+#tagsHeader{
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 10px;
+}
+
+#footerTextWrapper {
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+html, body {
+    height: 100%;
+  }
+  
+body {
+    display: flex;
+    flex-direction: column;
+  }
+.content {
+    flex: 1 0 auto;
+  }
+#footerWrapper {
+    flex-shrink: 1 0;
+    color: rgb(209, 209, 209);
+    background-color: rgb(90, 90, 90);
+  }
+
+
+  /* -----------------------nav bar--------------------------------- */
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: 35px;
+    align-items: center;
+}
+
+.listItem {
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: inherit;
+    color: black;
+    border-style: none;
+    letter-spacing: 1px;
+}
+
+.listItem a{
+    color: black;
+}
+
+nav .listItem:hover {
+    text-decoration: underline;
+}
+@media (min-width: 500px) {
+    
+    nav{  
+        flex-direction: row;
+        justify-content: space-around;
+    } 
+    body {
+        background-size: cover;
+    }
+    #mainPageImage {
+        height: 300px;
+    }
+    #recentPostTitle {
+        font-size: 2em;
+    }
+}
+
+
+#postsWrapper {
+    background-color: white;
+    margin-bottom: -15px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* display: grid;
+    grid-template-columns: 100px 400px 400px 100px;
+    grid-template-rows: auto;
+    grid-gap: 10px; */
+}
+
+#postsWrapper :nth-child(1) { 
+    order: 1; 
+    width: 400px;
+}
+#postsWrapper :nth-child(2) { order: 1; 
+    width: 400px; }
+#postsWrapper :nth-child(3) { order: 1; 
+    width: 400px;}
+#postsWrapper :nth-child(4) { order: 1;
+    width: 400px; }
+#postsWrapper :nth-child(5) { order: 1;
+    width: 400px; }
+#postsWrapper :nth-child(6) { order: 1;
+    width: 400px;
+ }
+
+#recentPost1Wrapper:hover {
+    background-color: rgba(211, 211, 211, 0.309);
+}
