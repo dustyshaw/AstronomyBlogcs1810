@@ -1,17 +1,19 @@
-let locationurl = `https://api.weather.gov/points/{39.7456},-97.0892`;
-fetch(locationurl)
-.then(response => response.json())
-.then (data => {
-    let hourlyForcastURL = data.properties.forecastHourly;
-    
-    fetch(hourlyForcastURL)
+
+
+window.addEventListener('load', init);
+
+function init() {
+    let url = `https://mars.nasa.gov/rss/api/?feed=weather&category=insight_temperature&feedtype=json`;
+    console.log(url);
+    fetch(url)
     .then(response => response.json())
     .then(data => {
+        window.apiData = data;
         console.log(data);
-        // let forcast = data.properties.periods[0].shortForecast;
-        
-        // let weather = document.getElementById("HourByHour");
-        //
-        // weather.innerHTML=`<p>${forcast}<p>`;
+        console.log(data[675].AT.av);
+        // app.data = data.validity_checks;
+
+        let replaceText = document.getElementById('MarsAPI');
+        replaceText.innerHTML = ("Sol 675: " + data[675].AT.av);
     });
-})
+}

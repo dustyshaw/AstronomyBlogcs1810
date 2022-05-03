@@ -13,16 +13,17 @@
         href="https://fonts.googleapis.com/css2?family=Hubballi&family=Julius+Sans+One&family=Jura:wght@300&family=Source+Code+Pro:wght@200&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="LifeOnMarsStyles.css">
-    <script rel="script" src="LifeOnMarsPost.js"></script>
-
+    
 </head>
 
 <body>
     <header>
-
+        
     </header>
-
+    
     <body>
+        <script rel="script" src="LifeOnMarsPost.js"></script>
+        <!-- <script src="https://unpkg.com/vue@3"></script> -->
         <nav>
             <span class="listItem" id="logo"><a href="../index.html">AstroBlog</a></span>
             <span class="listItem"><a href="../AllPostsTab\AllPosts.html">All Posts</a></span>
@@ -30,7 +31,7 @@
             <!-- <span class="listItem"><a href="../Demo.html">Demo</a></span> -->
             <span class="listItem"> <a href="../AboutTab\About.html">About</a></span>
         </nav>
-
+        
         <main>
             <div id="postDetails">
                 <h3>Post Details</h3>
@@ -46,6 +47,10 @@
                     </ul>
                 </ul>
             </div>
+
+            <!-- <div v-for="datapoint in data">
+                <p> {{ datapoint.AT }}</p>
+            </div> -->
 
             <div id="postWrapper">
                 <h1>Life on Mars</h1>
@@ -76,6 +81,9 @@
                     <figcaption>NASA's image of Mars Northern ice cap</figcaption>
                 </figure>
                 <p>This water may or may not be usable. We would need to create complex systems of water management.</p>
+                <h3>Temperature on Mars</h3>
+                <p>Mars is a cold planet on average.</p>
+                <div id="MarsAPI">Mars Temp: </div>
             </div>
         </main>
 

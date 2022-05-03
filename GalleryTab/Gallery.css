@@ -3,10 +3,10 @@ h1 {
     font-family: 'Julius Sans One';
 }
 
-header {
+/* header {
     background-color: black;
     font-family: 'Julius Sans One';
-}
+} */
 
 figcaption {
     color: grey;
@@ -15,7 +15,7 @@ figcaption {
 
 #logo {
     color: rgb(232, 128, 0);
-    background-color: black;
+    background-color: white;
     font-family: 'Julius Sans One', sans-serif;
     text-decoration: none;
     font-weight: bolder;
@@ -42,18 +42,18 @@ nav {
     flex-direction: column;
     min-height: 35px;
     align-items: center;
+    color: black;
 }
 
 .listItem {
     font-family: 'Julius Sans One', sans-serif;
     background-color: inherit;
-    color: white;
     border-style: none;
     letter-spacing: 1px;
 }
 
 .listItem a {
-    color: white;
+    text-decoration: none;
 }
 
 nav .listItem:hover {
