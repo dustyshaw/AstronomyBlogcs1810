@@ -5,7 +5,7 @@ h1 {
 
 header {
     background-color: black;
-    font-family: 'Julius Sans One'; 
+    font-family: 'Julius Sans One';
 }
 
 figcaption {
@@ -62,26 +62,26 @@ nav .listItem:hover {
 
 #imageContainer {
     padding-left: 8%;
-    width: 400px;
     display: flex;
     flex-wrap: wrap;
 }
 
-#img1{
-    flex: 1 1 auto;
+#img1 {
+    width: 400px;
     border-radius: 8%;
 }
 
 #img2 {
-    flex: 1 1 auto;
+    width: 400px;
     border-radius: 8%;
 }
 
 #img3 {
-    flex: 1 1 auto;
+    width: 400px;
     border-radius: 4%;
-} 
+}
 
+/* for big screens */
 @media (min-width: 500px) {
 
     nav {
@@ -92,7 +92,7 @@ nav .listItem:hover {
     #recentPostTitle {
         font-size: 2em;
     }
-    
+
     #imageContainer {
         padding-left: 8%;
         width: 80%;
@@ -102,24 +102,23 @@ nav .listItem:hover {
         grid-template-rows: auto;
         justify-content: center;
     }
-    
-    #img1{
+
+    #img1 {
         width: 400px;
         grid-column-start: 1;
         grid-column-end: 2;
         border-radius: 8%;
     }
-    
+
     #img2 {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2/3;
         border-radius: 8%;
     }
-    
+
     #img3 {
         width: 800px;
         border-radius: 4%;
     }
 }
-
