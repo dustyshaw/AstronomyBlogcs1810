@@ -63,26 +63,16 @@ nav .listItem:hover {
 #imageContainer {
     padding-left: 8%;
     width: 400px;
-    /* width: 80%; */
     display: flex;
     flex-wrap: wrap;
-    /* grid-gap: 10px;
-    grid-template-columns: 400px;
-    grid-template-rows: auto;
-    justify-content: center; */
 }
 
 #img1{
     flex: 1 1 auto;
-    /* grid-column-start: 1;
-    grid-column-end: 2; */
     border-radius: 8%;
 }
 
 #img2 {
-    /* grid-column-start: 2; */
-    /* grid-column-end: 3;
-    grid-row-start: 2/3; */
     flex: 1 1 auto;
     border-radius: 8%;
 }
@@ -97,14 +87,6 @@ nav .listItem:hover {
     nav {
         flex-direction: row;
         justify-content: space-around;
-    }
-
-    body {
-        background-size: cover;
-    }
-
-    #mainPageImage {
-        height: 300px;
     }
 
     #recentPostTitle {
