@@ -1,25 +1,25 @@
 * {
-    margin: 0;
+    margin: 0;                          /*Example 1 of CSS rule (margin)*/
 }
 
 h1 {
-    text-align: center;
-    font-family: 'Julius Sans One';
+    text-align: center;                 /*Example 2 of CSS rule (text-align)*/
+    font-family: 'Julius Sans One';     /*Example 3 of CSS rule (font-family)*/
 }
 
 header {
-    background-color: inherit;
-    font-family: 'Julius Sans One';
-    text-decoration: none;
+    background-color: inherit;          /*Example 4 of CSS rule (background-color)*/
+    font-family: 'Julius Sans One';     /*Example 5 of CSS rule (font-family)*/
+    text-decoration: none;              /*Example 6 of CSS rule (text-decoration)*/
 }
 
 #logo {
-    color: rgb(232, 128, 0);
+    color: rgb(232, 128, 0);          /*Example 7 of CSS rule (color)*/
     font-family: 'Julius Sans One', sans-serif;
     text-decoration: none;
-    font-weight: bolder;
-    letter-spacing: 3px;
-    font-size: 20px;
+    font-weight: bolder;                /*Example 8 of CSS rule (font-weight)*/
+    letter-spacing: 3px;                /*Example 9 of CSS rule (letter-spacing)*/
+    font-size: 20px;                    /*Example 10 of CSS rule (font-size)*/
     text-decoration: none;
 }
 
@@ -191,7 +191,7 @@ footer {
 
 /* -----------------------nav bar--------------------------------- */
 nav {
-    display: flex;
+    display: flex;                 /* Use of Flex Box */
     justify-content: center;
     text-align: center;
     flex-direction: column;
@@ -218,7 +218,7 @@ nav .listItem:hover {
 }
 
 
-@media (min-width: 500px) {
+@media (min-width: 500px) {                     /* Example 1 of Media Query */    
     
     nav {
         flex-direction: row;
@@ -242,10 +242,8 @@ nav .listItem:hover {
         margin-bottom: -15px;
         padding-top: 2%;
         padding-bottom: 2%;
-        
-        display: grid;
+        display: grid;                              /* Example of using CSS Grid */
         grid-template-columns: 300px 300px 300px ;
-        /* grid-gap: 150px; */
     }
     
     #recentPost1Wrapper {
@@ -284,7 +282,7 @@ nav .listItem:hover {
         background-color: white;
     }
 }
-@media (min-width: 900px) {
+@media (min-width: 900px) {                      /* Example 2 of Media Query */    
     #recentPostsWrapper {
         background-color: white;
         margin-bottom: -15px;
@@ -293,7 +291,6 @@ nav .listItem:hover {
 
         display: grid;
         grid-template-columns: 275px 275px 275px ;
-        /* grid-gap: 150px; */
     }
 
     #recentPost1Wrapper {

@@ -1,6 +1,8 @@
 class Planet {
-    PlanetName;
-    PlanetVolume;
+    constructor(PlanetName, PlanetVolume) {
+        this.Planetname = PlanetName;
+        this.PlanetVolume = PlanetVolume;
+    }
 }
 
 const Earth = new Planet();

@@ -1,5 +1,3 @@
-
-
 window.addEventListener('load', init);
 
 function init() {
@@ -11,9 +9,9 @@ function init() {
         window.apiData = data;
         console.log(data);
         console.log(data[675].AT.av);
-        // app.data = data.validity_checks;
 
         let replaceText = document.getElementById('MarsAPI');
         replaceText.innerHTML = ("Sol 675: " + data[675].AT.av);
     });
 }
+

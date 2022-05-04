@@ -1,5 +1,5 @@
 // Waits for the DOM to load before changing anything
-window.addEventListener("load", function () {
+window.addEventListener("load", function () {                           //example 1 of AddEventListener
 
     //Selects each button on the "AllPosts" page
     let MarsTagButton = document.getElementById("MarsTagButton");
@@ -8,8 +8,8 @@ window.addEventListener("load", function () {
     let PeopleButton = document.getElementById("InfluentialPeopleTagButton");
 
     //selects each section (post) by their tag (alt attribute).
-    let AstronautPosts = document.querySelectorAll('section[alt="Astronauts"]');
-    let MarsPosts = document.querySelectorAll('section[alt="MarsPost"]');
+    let AstronautPosts = document.querySelectorAll('section[alt="Astronauts"]');    //Example 1 of Query selector all
+    let MarsPosts = document.querySelectorAll('section[alt="MarsPost"]');           //Example 2 of Query selector all
     let GalaxiesPosts = document.querySelectorAll('section[alt="Galaxies"]');
     let PeoplePosts = document.querySelectorAll('section[alt="InfluentialPeople"]');
 
@@ -19,7 +19,7 @@ window.addEventListener("load", function () {
 
     //each event first turns all posts to their default style and default order
     //then it changes the style of all the selected posts and changes order to one
-    MarsTagButton.addEventListener("click", function () {
+    MarsTagButton.addEventListener("click", function () {               //example 2 of AddEventListener
         for (let Post of AllPosts) {
             Post.style.backgroundColor = "white";
             Post.style.order = 2;
