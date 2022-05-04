@@ -10,11 +10,7 @@ h1 {
 header {
     background-color: inherit;
     font-family: 'Julius Sans One';
-}
-
-figcaption {
-    color: grey;
-    font-size: x-small;
+    text-decoration: none;
 }
 
 #logo {
@@ -24,6 +20,7 @@ figcaption {
     font-weight: bolder;
     letter-spacing: 3px;
     font-size: 20px;
+    text-decoration: none;
 }
 
 #recentPostTitle {
@@ -50,20 +47,6 @@ body {
     left: 10%;
 }
 
-/* @media (min-width=500px) {
-    body{
-        background-position: left;
-        background-size: contain;
-    }
-    #quote {
-        color: whitesmoke;
-        background-color: inherit;
-        font-family: 'Jura', sans-serif;
-        position: absolute;
-        top: 60%;
-        left: 10%;
-    }
-} */
 #postLink {
     text-decoration: none;
     color: black;
@@ -105,7 +88,6 @@ body {
     margin-bottom: 1px;
     padding-top: 2%;
     padding-bottom: 2%;
-    display: flex;
     max-width: 100%;
     justify-content: space-around;
 }
@@ -119,8 +101,8 @@ body {
     box-shadow: -10px 10px 15px .3px rgba(114, 114, 114, 0.459);
     border-width: .5px;
     border-radius: 8px;
+    display: block;
     flex-wrap: wrap;
-    width: fit-content;
     height: fit-content;
 }
 
@@ -131,7 +113,8 @@ body {
     box-shadow: -10px 10px 15px .3px rgba(114, 114, 114, 0.459);
     border-width: .5px;
     border-radius: 8px;
-    width: fit-content;
+    /* width: fit-content; */
+    display: block;
     flex-wrap: wrap;
     background-color: white;
 }
@@ -143,7 +126,8 @@ body {
     box-shadow: -10px 10px 15px .3px rgba(114, 114, 114, 0.459);
     border-width: .5px;
     border-radius: 8px;
-    width: fit-content;
+    /* width: fit-content; */
+    display: block;
     flex-wrap: wrap;
     background-color: white;
     
@@ -168,7 +152,6 @@ body {
 #tagsList button {
     color: black;
     background-color: white;
-    /* font-weight: bold; */
     border: none;
     border-radius: 12px;
     margin: 3px;
@@ -222,31 +205,81 @@ nav {
 
 .listItem a {
     color: white;
+    text-decoration: none;
 }
 
 nav .listItem:hover {
     text-decoration: underline;
 }
 
-@media (min-width: 500px) {
 
+@media (min-width: 500px) {
+    
     nav {
         flex-direction: row;
         justify-content: space-around;
     }
-
+    
     body {
         background-size: cover;
     }
-
+    
     #mainPageImage {
         height: 450px;
     }
-
+    
     #recentPostTitle {
         font-size: 2em;
     }
-
+    
+    #recentPostsWrapper {
+        background-color: white;
+        margin-bottom: -15px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        
+        display: grid;
+        grid-template-columns: 275px 275px 275px ;
+        /* grid-gap: 150px; */
+    }
+    
+    #recentPost1Wrapper {
+        padding: 2%;
+        border: solid;
+        border-color: darkgray;
+        box-shadow: -10px 10px 15px .3px rgba(114, 114, 114, 0.459);
+        border-width: .5px;
+        border-radius: 8px;
+        grid-column: 1/2;
+        width: 275px;
+        height: fit-content;
+    }
+    
+    #recentPost2Wrapper {
+        padding: 2%;
+        border: solid;
+        border-color: darkgray;
+        box-shadow: -10px 10px 15px .3px rgba(114, 114, 114, 0.459);
+        border-width: .5px;
+        border-radius: 8px;
+        width: 275px;
+        grid-column: 2/3;
+        background-color: white;
+    }
+    
+    #recentPost3Wrapper {
+        padding: 2%;
+        border: solid;
+        border-color: darkgray;
+        box-shadow: -10px 10px 15px .3px rgba(114, 114, 114, 0.459);
+        border-width: .5px;
+        border-radius: 8px;
+        width: 275px;
+        grid-column: 3/4;
+        background-color: white;
+    }
+}
+@media (min-width: 900px) {
     #recentPostsWrapper {
         background-color: white;
         margin-bottom: -15px;
@@ -254,9 +287,8 @@ nav .listItem:hover {
         padding-bottom: 2%;
 
         display: grid;
-        grid-template-columns: 100px 400px 400px 400px 100px;
-        grid-template-rows: auto;
-        grid-gap: 40px;
+        grid-template-columns: 275px 275px 275px ;
+        /* grid-gap: 150px; */
     }
 
     #recentPost1Wrapper {
@@ -266,8 +298,8 @@ nav .listItem:hover {
         box-shadow: -10px 10px 15px .3px rgba(114, 114, 114, 0.459);
         border-width: .5px;
         border-radius: 8px;
-        grid-column: 2/3;
-        width: 400px;
+        grid-column: 1/2;
+        width: 275px;
         height: fit-content;
     }
 
@@ -278,8 +310,8 @@ nav .listItem:hover {
         box-shadow: -10px 10px 15px .3px rgba(114, 114, 114, 0.459);
         border-width: .5px;
         border-radius: 8px;
-        width: 400px;
-        grid-column: 3/4;
+        width: 275px;
+        grid-column: 2/3;
         background-color: white;
     }
 
@@ -290,8 +322,8 @@ nav .listItem:hover {
         box-shadow: -10px 10px 15px .3px rgba(114, 114, 114, 0.459);
         border-width: .5px;
         border-radius: 8px;
-        width: 400px;
-        grid-column: 4/5;
+        width: 275px;
+        grid-column: 3/4;
         background-color: white;
     }
 }
