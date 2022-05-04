@@ -1,5 +1,5 @@
 
-* {
+main {
     padding-left: 3%;
     padding-right: 3%;
 }
@@ -12,66 +12,106 @@
     letter-spacing: 3px;
 }
 
-#navWrapper {
+nav {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    flex-direction: column;
+    height: fit-content;
+    font-size: 20px;
+    align-items: center;
 }
 
-#navWrapper button {
+.listItem {
+    font-family: 'Julius Sans One', sans-serif;
     background-color: inherit;
-    color: white;
-    border-color: white;
+    color: black;
     border-style: none;
-    font-size: small;
     letter-spacing: 1px;
-    padding-right: 8%;
+}
+
+.listItem a {
+    color: black;
+    text-decoration: none;
+}
+
+nav .listItem:hover {
+    text-decoration: underline;
 }
 
 #MarsAPI {
     border: solid;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 #navWrapper button:hover {
     text-decoration: underline;
 }
 
-#postWrapper, h1, h2, h3 {
+article, h1, h2, h3, p {
     font-family: 'Julius Sans One', sans-serif;
-}
-
-#postWrapper p {
-    font-family: 'Hubballi', cursive;
-    font-size: larger;
-    width: 500px;
-}
-
-figcaption {
-    font-family: sans-serif;
-    color: rgb(171, 171, 171);
-}
-
-#otherPostsHeader {
-    text-align: center;
-    font-family: 'Julius Sans One', sans-serif;
-    font-weight: bold;
-    font-size: large;
-    letter-spacing: 10px;
-}
-
-main {
-    padding-top: 10%;
-    display: flex;
-}
-
-#postDetails {
-    background-image: linear-gradient(45deg, #6955c395, #88203daa);
-    width: 200px;
-    color: white;
-}
-
-#postDetails ul {
-    font-family: 'Source Code Pro', monospace;
 }
 
 img {
-    width: 600px;
+    width: 300px;
+} 
+
+* {
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    * {
+        flex-direction: row;
+    }
+    article p {
+        font-family: 'Hubballi', cursive;
+        font-size: larger;
+        width: 500px;
+    }
+    
+    figcaption {
+        font-family: sans-serif;
+        color: rgb(171, 171, 171);
+        width: 600px;
+    }
+    
+    #otherPostsHeader {
+        text-align: center;
+        font-family: 'Julius Sans One', sans-serif;
+        font-weight: bold;
+        font-size: large;
+        letter-spacing: 10px;
+    }
+    
+    main {
+        padding-top: 10%;
+        display: flex;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    
+    #postDetails {
+        background-image: linear-gradient(45deg, #6955c395, #88203daa);
+        width: 200px;
+        color: white;
+        padding-right: 3%;
+        margin-right: 3%;
+    }
+    
+    #postDetails ul {
+        font-family: 'Source Code Pro', monospace;
+    }
+    
+    img {
+        width: 600px;
+    }
+    
 }

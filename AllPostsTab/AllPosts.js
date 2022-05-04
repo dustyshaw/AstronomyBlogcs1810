@@ -25,7 +25,7 @@ window.addEventListener("load", function () {
             Post.style.order = 2;
         }
         for (let MarsPost of MarsPosts) {
-            MarsPost.style.backgroundColor = "pink";
+            MarsPost.style.backgroundColor = "lightgrey";
             MarsPost.style.order = 1;
         }
     });
@@ -35,7 +35,7 @@ window.addEventListener("load", function () {
             Post.style.order = 2;
         }
         for (let AstronautPost of AstronautPosts) {
-            AstronautPost.style.backgroundColor = "pink";
+            AstronautPost.style.backgroundColor = "lightgrey";
             AstronautPost.style.order = 1;
         }
     });
@@ -45,7 +45,7 @@ window.addEventListener("load", function () {
             Post.style.order = 2;
         }
         for (let GalaxiesPost of GalaxiesPosts) {
-            GalaxiesPost.style.backgroundColor = "pink";
+            GalaxiesPost.style.backgroundColor = "lightgrey";
             GalaxiesPost.style.order = 1;
         }
     });
@@ -55,7 +55,7 @@ window.addEventListener("load", function () {
             Post.style.order = 2;
         }
         for (let PeoplePost of PeoplePosts) {
-            PeoplePost.style.backgroundColor = "pink";
+            PeoplePost.style.backgroundColor = "lightgrey";
             PeoplePost.style.order = 1;
         }
     });

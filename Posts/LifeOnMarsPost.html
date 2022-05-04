@@ -13,101 +13,98 @@
         href="https://fonts.googleapis.com/css2?family=Hubballi&family=Julius+Sans+One&family=Jura:wght@300&family=Source+Code+Pro:wght@200&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="LifeOnMarsStyles.css">
-    
+
 </head>
 
-<body>
-    <header>
-        
-    </header>
-    
-    <body>
-        <script rel="script" src="LifeOnMarsPost.js"></script>
-        <!-- <script src="https://unpkg.com/vue@3"></script> -->
-        <nav>
-            <span class="listItem" id="logo"><a href="../index.html">AstroBlog</a></span>
-            <span class="listItem"><a href="../AllPostsTab\AllPosts.html">All Posts</a></span>
-            <span class="listItem"><a href="../GalleryTab\Gallery.html">Gallery</a></span>
-            <!-- <span class="listItem"><a href="../Demo.html">Demo</a></span> -->
-            <span class="listItem"> <a href="../AboutTab\About.html">About</a></span>
-        </nav>
-        
-        <main>
-            <div id="postDetails">
-                <h3>Post Details</h3>
-                <ul>
-                    <li><strong>Published: </strong>04/28/2022</li>
-                    <hr>
-                    <li><strong>Author:</strong> Dusty Shaw </li>
-                    <hr>
-                    <li><strong>Tags: </strong></li>
-                    <ul>
-                        <li alt="Space_Exploration">Space Exploration</li>
-                        <li alt="The_Planets">The Planets</li>
-                    </ul>
-                </ul>
-            </div>
+<header>
+    <nav>
+        <span class="listItem" id="logo"><a href="../index.html">AstroBlog</a></span>
+        <span class="listItem"><a href="../AllPostsTab\AllPosts.html">All Posts</a></span>
+        <span class="listItem"><a href="../GalleryTab\Gallery.html">Gallery</a></span>
+        <!-- <span class="listItem"><a href="../Demo.html">Demo</a></span> -->
+        <span class="listItem"> <a href="../AboutTab\About.html">About</a></span>
+    </nav>
+</header>
 
-            <!-- <div v-for="datapoint in data">
+<body>
+    <script rel="script" src="LifeOnMarsPost.js"></script>
+
+    <main>
+        <div id="postDetails">
+            <h3>Post Details</h3>
+            <ul>
+                <li><strong>Published: </strong>04/28/2022</li>
+                <hr>
+                <li><strong>Author:</strong> Dusty Shaw </li>
+                <hr>
+                <li><strong>Tags: </strong></li>
+                <ul>
+                    <li alt="Space_Exploration">Space Exploration</li>
+                    <li alt="The_Planets">The Planets</li>
+                </ul>
+            </ul>
+        </div>
+
+        <!-- <div v-for="datapoint in data">
                 <p> {{ datapoint.AT }}</p>
             </div> -->
 
-            <div id="postWrapper">
-                <h1>Life on Mars</h1>
-                <p>In the Fall of 1964, the Mariner 4 frantically captured it 6-bit images of Mars. With just 310 Watts
-                    of solar power (just enough to power one vaccuum cleaner) the Mariner 4 sent those images back to
-                    Earth
-                    from deep space. However, the first ever close-up images of Mars showed something scientists didn`t
-                    expect: Earths closest cousin in our solar system seemed to have<i>craters</i>.</p>
-                <p>Why was this so detrimental during the Mariner 4 mission? Promintent craters mean little volcanic and
-                    water activity (like the craters of our dead, atmospherically thin moon). Compared to our prolific
-                    earth who’s volcanic activity provided us with a dense enough atmosphere to contain water and oxygen
-                    supply. </p>
-                <figure>
-                    <img src="../Images\Mariner-4-Mars-Image.png">
-                    <figcaption>One of the first close-up images of Mars taken by NASA`s, the Mariner 4 in 1964. Shows
-                        the sun casting shadows on massive craters left behind from the planets creation. </figcaption>
-                </figure>
-                <p>Mars, like other "dead planets" has a thin atmosphere. The cratered surface has not been worn away by
-                    water, but there is evidence that it contained great lakes at one point in its early existence. </p>
-                <h2>What do you need to sustain life?</h2>
-                <h3>Mars water</h3>
-                <p>While Mars does contain water, most of it is in a permafrost, a layer of ice that doesn`t melt
-                    throughout the year. You can also see ice caps on Mars. These ice caps are much like the Earth in
-                    that they do not melt thorughout the season. We have learned from our rovers that there
-                    might be a layer of water casted in pockets of rock.</p>
-                <figure>
-                    <img src="../Images\MarsIceCaps.jpg">
-                    <figcaption>NASA's image of Mars Northern ice cap</figcaption>
-                </figure>
-                <p>This water may or may not be usable. We would need to create complex systems of water management.</p>
-                <h3>Temperature on Mars</h3>
-                <p>Mars is a cold planet on average.</p>
-                <div id="MarsAPI">Mars Temp: </div>
-            </div>
-        </main>
+        <article>
+            <h1>Life on Mars</h1>
+            <p>In the Fall of 1964, the Mariner 4 frantically captured it 6-bit images of Mars. With just 310 Watts
+                of solar power (just enough to power one vaccuum cleaner) the Mariner 4 sent those images back to
+                Earth
+                from deep space. However, the first ever close-up images of Mars showed something scientists didn`t
+                expect: Earths closest cousin in our solar system seemed to have<i>craters</i>.</p>
+            <p>Why was this so detrimental during the Mariner 4 mission? Promintent craters mean little volcanic and
+                water activity (like the craters of our dead, atmospherically thin moon). Compared to our prolific
+                earth who’s volcanic activity provided us with a dense enough atmosphere to contain water and oxygen
+                supply. </p>
+            <figure>
+                <img src="../Images\Mariner-4-Mars-Image.png" alt="Image of Mars Surface taken by NASA 1964">
+                <figcaption>One of the first close-up images of Mars taken by NASA`s, the Mariner 4 in 1964. Shows
+                    the sun casting shadows on massive craters left behind from the planets creation. </figcaption>
+            </figure>
+            <p>Mars, like other "dead planets" has a thin atmosphere. The cratered surface has not been worn away by
+                water, but there is evidence that it contained great lakes at one point in its early existence. </p>
+            <h2>What do you need to sustain life?</h2>
+            <h3>Mars water</h3>
+            <p>While Mars does contain water, most of it is in a permafrost, a layer of ice that doesn`t melt
+                throughout the year. You can also see ice caps on Mars. These ice caps are much like the Earth in
+                that they do not melt thorughout the season. We have learned from our rovers that there
+                might be a layer of water casted in pockets of rock.</p>
+            <figure>
+                <img src="../Images\MarsIceCaps.jpg" alt="Image of Mars ice cap taken by NASA">
+                <figcaption>NASA's image of Mars Northern ice cap</figcaption>
+            </figure>
+            <p>This water may or may not be usable. We would need to create complex systems of water management.</p>
+            <h3>Temperature on Mars</h3>
+            <p>Mars is a cold planet on average.  Here is what the temperature is like on Mars.  This temperature was taken by the InSight mission: </p>
+            <div id="MarsAPI">Mars Temp: </div>
+        </article>
+    </main>
 
-        <hr>
-        <div id="otherPosts">
-            <p id="otherPostsHeader">Related</p>
-            <h1>Duis Aute Irure</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-            <h2>Nulla Pariatur</h2>
-            <p> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. </p>
-        </div>
-    </body>
+    <hr>
+    <article>
+        <p id="otherPostsHeader">Related</p>
+        <h1>Duis Aute Irure</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.</p>
+        <h2>Nulla Pariatur</h2>
+        <p> Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. </p>
+    </article>
 </body>
+
 <footer>
     <p>Made by Dusty Shaw 2022</p>
 </footer>

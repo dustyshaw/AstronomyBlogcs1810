@@ -4,7 +4,7 @@ h1 {
 }
 
 header {
-    background-color: black;
+    background-color: white;
     font-family: 'Julius Sans One';
 }
 
@@ -44,11 +44,6 @@ header {
 body {
     display: flex;
     flex-direction: column;
-}
-
-.content {
-    flex: 1 0 auto;
-    width: 200px;
 }
 
 #footerWrapper {
@@ -154,10 +149,6 @@ nav .listItem:hover {
         justify-content: space-around;
     }
 
-    #recentPostTitle {
-        font-size: 2em;
-    }
-
     #postsWrapper {
         background-color: white;
         margin-bottom: -15px;
@@ -168,17 +159,11 @@ nav .listItem:hover {
         flex-wrap: wrap;
     }
 
-    .content {
-        display: flex;
-        flex-direction: row;
-    }
     #postsWrapper :nth-child(1) {
         order: 1;
         width: 300px;
         text-decoration: none;
         color: black;
-        /* padding: 10px 10px 10px 10px;
-        margin: 10px 10px 10px 10px; */
     }
     
     #postsWrapper :nth-child(2) {
@@ -186,8 +171,6 @@ nav .listItem:hover {
         width: 300px;
         text-decoration: none;
         color: black;
-        /* padding: 10px 10px 10px 10px;
-        margin: 10px 10px 10px 10px; */
     }
     
     #postsWrapper :nth-child(3) {
@@ -195,8 +178,6 @@ nav .listItem:hover {
         width: 300px;
         text-decoration: none;
         color: black;
-        padding: 10px 10px 10px 10px;
-        margin: 10px 10px 10px 10px;
     }
     
     #postsWrapper :nth-child(4) {
@@ -204,8 +185,6 @@ nav .listItem:hover {
         width: 300px;
         text-decoration: none;
         color: black;
-        padding: 10px 10px 10px 10px;
-        margin: 10px 10px 10px 10px;
     }
     
     #postsWrapper :nth-child(5) {
@@ -213,8 +192,6 @@ nav .listItem:hover {
         width: 300px;
         text-decoration: none;
         color: black;
-        /* padding: 10px 10px 10px 10px;
-        margin: 10px 10px 10px 10px; */
     }
     
     #postsWrapper :nth-child(6) {
@@ -222,7 +199,5 @@ nav .listItem:hover {
         width: 300px;
         text-decoration: none;
         color: black;
-        padding: 10px 10px 10px 10px;
-        margin: 10px 10px 10px 10px;
     }
 }
