@@ -15,7 +15,7 @@ figcaption {
 
 #logo {
     color: rgb(232, 128, 0);
-    background-color: black;
+    background-color: white;
     font-family: 'Julius Sans One', sans-serif;
     text-decoration: none;
     font-weight: bolder;
@@ -30,16 +30,20 @@ figcaption {
 
 html, body {
     height: 100%;
+    font-family: 'Hubballi', cursive;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
+main {
+    align-items: center;
+    width: 800px;
+    padding-left: 200px;
 }
 
-.content {
-    flex: 1 0 auto;
+main img {
+    width: 400px;
+    padding-left: 175px;
 }
+
 
 #footerWrapper {
     flex-shrink: 1 0;
